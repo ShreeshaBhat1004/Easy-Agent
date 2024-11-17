@@ -1,12 +1,9 @@
+# Easy-Agent(beta)
 
  <!-- Replace with your project's logo if available -->
 <div align="center">
   <img src="https://github.com/ShreeshaBhat1004/MALWARE-ANALYSIS/blob/main/easy-agent--a-logo-related-to-ai.svg" alt="Logo" width="300">
 </div>
-
-# Easy-Agent(beta)
-
-
 
 ## Table of Contents
 - [Overview](#overview)
