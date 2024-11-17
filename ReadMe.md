@@ -1,6 +1,6 @@
 
  <!-- Replace with your project's logo if available -->
-![Your SVG description](https://github.com/ShreeshaBhat1004/MALWARE-ANALYSIS/blob/main/easy-agent--a-logo-related-to-ai.svg){:width="120px" height="120px"}
+![Your SVG description](https://github.com/ShreeshaBhat1004/MALWARE-ANALYSIS/blob/main/easy-agent--a-logo-related-to-ai.svg){:width="60px" height="60px"}
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
