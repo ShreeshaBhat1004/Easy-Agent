@@ -1,6 +1,7 @@
 
  <!-- Replace with your project's logo if available -->
-![Logo](https://github.com/ShreeshaBhat1004/MALWARE-ANALYSIS/blob/main/easy-agent--a-logo-related-to-ai.svg){width:50%}
+<img src="https://github.com/ShreeshaBhat1004/MALWARE-ANALYSIS/blob/main/easy-agent--a-logo-related-to-ai.svg" alt="Logo" width="200" height="200">
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
