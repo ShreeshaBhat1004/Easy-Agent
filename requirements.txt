@@ -1,0 +1,7 @@
+# requirements.txt
+requests
+beautifulsoup4
+googlesearch-python
+groq
+python-dotenv
+PyYAML
