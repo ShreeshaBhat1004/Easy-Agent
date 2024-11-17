@@ -155,7 +155,7 @@ To execute the multi-agent system, use the provided scripts. Here's how to run t
    - **Assigns and Executes Tasks**: Delegates tasks to the appropriate agents.
    - **Displays Results**: Prints the final outcomes of each agent's operations.
 
-3. **Example Output**
+3. **Example Output(upon running run_system.py)**
 ![image](https://github.com/user-attachments/assets/d184771e-7119-4743-84f6-8f4a61f04e9a)
 
 
