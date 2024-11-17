@@ -25,7 +25,7 @@
 
 ## Overview
 
-**Easy-Agent** is a versatile multi-agent system designed to perform a variety of tasks by leveraging specialized agents. Built with modularity and extensibility in mind, Easy-Agent allows developers to create, integrate, and manage custom agents effortlessly. Whether you need web browsing capabilities, data processing, reporting, or other functionalities, Easy-Agent provides a robust framework to meet your needs.
+**Easy-Agent** is a multi-agent system designed to be easy-to-setup compared to [crewAI](https://github.com/crewAIInc/crewAI) or [Autogen](https://github.com/microsoft/autogen). Built with simplicity and extensible, Easy-Agent allows developers to create, integrate, and manage custom agents effortlessly. Whether you need web browsing capabilities, data processing, reporting, or other functionalities, Easy-Agent provides a robust framework to meet your needs.
 
 ## Features
 
@@ -50,11 +50,11 @@ Before setting up Easy-Agent, ensure you have the following installed on your sy
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/Easy-Agent.git
+   git clone https://github.com/ShreeshaBhat1004/Easy-Agent.git
    cd Easy-Agent
    ```
 
-2. **Set Up a Virtual Environment (Recommended)**
+2. **Set Up a Virtual Environment (Optional)**
 
    ```bash
    python -m venv venv
@@ -156,44 +156,8 @@ To execute the multi-agent system, use the provided scripts. Here's how to run t
    - **Displays Results**: Prints the final outcomes of each agent's operations.
 
 3. **Example Output**
+![image](https://github.com/user-attachments/assets/d184771e-7119-4743-84f6-8f4a61f04e9a)
 
-   ```
-   GROQ_API_KEY: your_actual_groq_api_key_here
-   GOOGLE_API_KEY: your_actual_google_api_key_here
-   GOOGLE_CX: your_actual_google_cx_here
-   2024-04-27 12:00:00,000 - agents.agent_manager - INFO - Replaced api_key with environment variable GROQ_API_KEY: your_actual_groq_api_key_here
-   2024-04-27 12:00:00,100 - agents.agent_manager - INFO - Replaced search_api_key with environment variable GOOGLE_API_KEY: your_actual_google_api_key_here
-   2024-04-27 12:00:00,200 - agents.agent_manager - INFO - Replaced search_engine_id with environment variable GOOGLE_CX: your_actual_google_cx_here
-   2024-04-27 12:00:00,300 - agents.agent_manager - INFO - Agent 'WebBrowsingAgent' of type 'web_browsing' registered.
-   2024-04-27 12:00:00,400 - agents.agent_manager - INFO - Agent 'DataProcessingAgent1' of type 'data_processing' registered.
-   2024-04-27 12:00:00,500 - agents.agent_manager - INFO - Agent 'ReportingAgent1' of type 'reporting' registered.
-   2024-04-27 12:00:00,600 - agents.agent_manager - INFO - Task added: {'type': 'search', 'query': 'who won the 2024 presidential elections'}
-   2024-04-27 12:00:00,700 - agents.agent_manager - INFO - Task added: {'type': 'process_data', 'data': 'Election results data'}
-   2024-04-27 12:00:00,800 - agents.agent_manager - INFO - Task added: {'type': 'generate_report', 'content': 'Summary of the 2024 presidential election results.'}
-   2024-04-27 12:00:00,900 - agents.agent_manager - INFO - Assigning task {'type': 'search', 'query': 'who won the 2024 presidential elections'} to agent 'WebBrowsingAgent'.
-   2024-04-27 12:00:01,000 - agents.web_browsing_agent - INFO - Performing search with URL: https://www.googleapis.com/customsearch/v1?key=your_actual_google_api_key_here&cx=your_actual_google_cx_here&q=who+won+the+2024+presidential+elections&num=3
-   2024-04-27 12:00:01,100 - agents.web_browsing_agent - INFO - Retrieved 3 results from Google Custom Search API.
-   2024-04-27 12:00:01,200 - agents.web_browsing_agent - INFO - Sending prompt to Groq API for summarization.
-   2024-04-27 12:00:01,300 - agents.web_browsing_agent - INFO - Received summary from Groq API.
-   2024-04-27 12:00:01,400 - agents.agent_manager - INFO - Result received from 'WebBrowsingAgent': {'task': {'type': 'search', 'query': 'who won the 2024 presidential elections'}, 'summary': 'In the 2024 United States presidential election, [Candidate Name] secured victory over [Opponent Name], garnering a significant majority of both the popular and electoral votes. This outcome reflects [brief analysis based on fetched data]. For more detailed results and insights, please refer to reputable news sources.'}
-   2024-04-27 12:00:01,500 - agents.agent_manager - INFO - Assigning task {'type': 'process_data', 'data': 'Election results data'} to agent 'DataProcessingAgent1'.
-   2024-04-27 12:00:01,600 - agents.data_processing_agent - INFO - Processing data: Election results data
-   2024-04-27 12:00:01,700 - agents.data_processing_agent - INFO - Processed data: Election results data
-   2024-04-27 12:00:01,800 - agents.agent_manager - INFO - Result received from 'DataProcessingAgent1': {'task': {'type': 'process_data', 'data': 'Election results data'}, 'processed_data': 'Processed data: Election results data'}
-   2024-04-27 12:00:01,900 - agents.agent_manager - INFO - Assigning task {'type': 'generate_report', 'content': 'Summary of the 2024 presidential election results.'} to agent 'ReportingAgent1'.
-   2024-04-27 12:00:02,000 - agents.reporting_agent - INFO - Generating report: Summary of the 2024 presidential election results.
-   2024-04-27 12:00:02,100 - agents.reporting_agent - INFO - Report Generated: Summary of the 2024 presidential election results.
-   
-   Final Results:
-   Agent: WebBrowsingAgent
-   Result: {'task': {'type': 'search', 'query': 'who won the 2024 presidential elections'}, 'summary': 'In the 2024 United States presidential election, [Candidate Name] secured victory over [Opponent Name], garnering a significant majority of both the popular and electoral votes. This outcome reflects [brief analysis based on fetched data]. For more detailed results and insights, please refer to reputable news sources.'}
-   
-   Agent: DataProcessingAgent1
-   Result: {'task': {'type': 'process_data', 'data': 'Election results data'}, 'processed_data': 'Processed data: Election results data'}
-   
-   Agent: ReportingAgent1
-   Result: {'task': {'type': 'generate_report', 'content': 'Summary of the 2024 presidential election results.'}, 'report': 'Report Generated: Summary of the 2024 presidential election results.'}
-   ```
 
 ## Creating Custom Agents
 
@@ -535,8 +499,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any questions, suggestions, or support, feel free to reach out:
 
-- **Email:** your.email@example.com
-- **GitHub Issues:** [Open an Issue](https://github.com/yourusername/Easy-Agent/issues)
-- **Twitter:** [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
+- **Email:** [srbhat1004@gmail.com]
+
 
 Happy Coding! 🚀
