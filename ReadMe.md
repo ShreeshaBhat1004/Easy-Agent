@@ -489,12 +489,6 @@ Contributions are welcome! If you'd like to enhance Easy-Agent, please follow th
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-**Disclaimer:** Replace placeholder text like `yourusername`, `path_to_logo_image`, and `your_actual_api_key_here` with your actual information. Ensure sensitive information like API keys are never committed to version control systems.
-
----
-
 **Contact Information:**
 
 For any questions, suggestions, or support, feel free to reach out:
