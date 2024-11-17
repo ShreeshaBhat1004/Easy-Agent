@@ -1,6 +1,6 @@
 # Easy-Agent
 
-![Easy-Agent Logo](path_to_logo_image) <!-- Replace with your project's logo if available -->
+![Easy-Agent Logo](https://www.recraft.ai/community?imageId=bdd48ada-ea4f-40c2-ad0b-557bae8f38f5) <!-- Replace with your project's logo if available -->
 
 ## Table of Contents
 - [Overview](#overview)
