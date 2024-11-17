@@ -25,7 +25,7 @@
 
 ## Overview
 
-**Easy-Agent** is a multi-agent system designed to be easy-to-setup compared to [crewAI](https://github.com/crewAIInc/crewAI) or [Autogen](https://github.com/microsoft/autogen). Built with simplicity and extensible, Easy-Agent allows developers to create, integrate, and manage custom agents effortlessly. Whether you need web browsing capabilities, data processing, reporting, or other functionalities, Easy-Agent provides a robust framework to meet your needs.
+**Easy-Agent** is a multi-agent system designed to be easy-to-setup compared to [crewAI](https://github.com/crewAIInc/crewAI) or [Autogen](https://github.com/microsoft/autogen). Built with simplicity and extensible in mind, Easy-Agent allows developers to create, integrate, and manage custom agents effortlessly. Whether you need web browsing capabilities, data processing, reporting, or other functionalities, Easy-Agent provides a robust framework to meet your needs.
 
 ## Features
 
