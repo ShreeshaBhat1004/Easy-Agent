@@ -497,3 +497,16 @@ For any questions, suggestions, or support, feel free to reach out:
 
 
 Happy Coding! 🚀
+
+
+# Low-Rank Factorization of \(\Delta_{l}^{l+i}\)
+
+\[
+\mathbf{W}_{l+i} = \mathbf{W}_l + \Delta_{l}^{l+i}
+\]
+
+where \( \Delta_{l}^{l+i} \) is factorized into low-rank matrices \( \mathbf{A} \) and \( \mathbf{B} \):
+
+\[
+\Delta_{l}^{l+i} = \mathbf{A}_{d \times r} \cdot \mathbf{B}_{r \times d}, \quad r \ll d
+\]
